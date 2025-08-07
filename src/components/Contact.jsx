@@ -94,7 +94,7 @@ const Contact = () => {
                 </svg>
 
                 <span className="mx-2 w-72 truncate font-urbanist text-base-content">
-                  andrew@apbuilding.com
+                  contact@veritas-inc.com
                 </span>
               </p>
             </div>
@@ -238,7 +238,7 @@ const Contact = () => {
         </div>
       </motion.div>
       <div className="flex items-center justify-center py-10 font-urbanist text-sm lg:text-lg">
-        <h1>© 2024 AP Building Inc. All rights reserved. </h1>
+        <h1>© 2025 veritas managed solutions, inc. All rights reserved. </h1>
       </div>
     </motion.section>
   );

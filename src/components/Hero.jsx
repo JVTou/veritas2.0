@@ -23,13 +23,13 @@ const Hero = () => {
           muted
           playsInline
           className="max-w-xs rounded-b-box rounded-t-[14rem] shadow-2xl outline outline-base-content/5 md:max-w-md"
-          src="/images/featured/painting.mp4"
+          src="/images/featured/network.mp4"
         >
           Your browser does not support the video tag.
         </video>
         <div className="text-center lg:text-start flex flex-col justify-center items-center lg:items-start min-w-2/3">
-          <div className="font-urbanist text-3xl font-black uppercase md:text-7xl">
-            AP Building Maintenance Inc.
+          <div className="font-garamond text-3xl font-black uppercase md:text-7xl">
+            veritas managed solutions, inc.
             <div className="h-[4.5rem] md:h-[9rem] md:w-[720px]">
               <Typewriter
                 onInit={(typewriter) => {
@@ -59,13 +59,13 @@ const Hero = () => {
           <div className="py-6 flex gap-2 max-lg:justify-center">
             <a
               href="#contactus"
-              className="btn btn-neutral md:btn-lg rounded-full font-urbanist shadow-md"
+              className="btn btn-neutral md:btn-lg rounded-full font-garamond shadow-md"
             >
               Contact Us
             </a>
             <a
               href="#projects"
-              className="btn btn-ghost md:btn-lg rounded-full font-urbanist font-light"
+              className="btn btn-ghost md:btn-lg rounded-full font-garamond font-light"
             >
               See our work
             </a>

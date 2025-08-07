@@ -36,10 +36,10 @@ const Services = () => {
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="flex flex-col items-center justify-center"
       >
-        <h1 className="z-10 font-urbanist text-center text-2xl font-semibold md:text-5xl">
+        <h1 className="z-10 font-garamond text-center text-2xl font-semibold md:text-5xl">
           Our Services
         </h1>
-        <span className="z-10 text-md font-urbanist mt-2 px-2 text-center md:mt-4 md:px-5 md:text-xl">
+        <span className="z-10 text-md font-garamond mt-2 px-2 text-center md:mt-4 md:px-5 md:text-xl">
           Uncover new paths, explore opportunities and chart your success with
           us.
         </span>
@@ -54,10 +54,10 @@ const Services = () => {
             className="z-10 card max-w-2xl shadow-sm transition duration-300 hover:-translate-y-1"
           >
             <div className="card-body">
-              <h2 className="font-urbanist card-title text-3xl font-black">
+              <h2 className="font-garamond card-title text-3xl font-black">
                 {item.name}
               </h2>
-              <p className="text-md font-urbanist font-medium opacity-60">
+              <p className="text-md font-garamond font-medium opacity-60">
                 {item.description}
               </p>
               <figure>

@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         urbanist: ["Urbanist", "sans-serif"],
+        garamond: ["EB Garamond", "serif"],
       },
     },
   },

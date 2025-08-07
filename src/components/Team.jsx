@@ -61,10 +61,10 @@ const Team = () => {
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="flex flex-col items-center justify-center"
       >
-        <h1 className="z-10 font-urbanist text-center text-2xl font-semibold md:text-5xl">
+        <h1 className="z-10 font-garamond text-center text-2xl font-semibold md:text-5xl">
           Our Team
         </h1>
-        <span className="z-10 text-md font-urbanist mt-4 px-2 text-center md:mt-4 md:px-5 md:text-xl">
+        <span className="z-10 text-md font-garamond mt-4 px-2 text-center md:mt-4 md:px-5 md:text-xl">
           our team collaborates seamlessly to succeed on your projects.
         </span>
       </motion.div>
@@ -85,10 +85,10 @@ const Team = () => {
               />
             </figure>
             <div className="card-body items-center text-center">
-              <h2 className="font-urbanist card-title font-bold">
+              <h2 className="font-garamond card-title font-bold">
                 {item.name}
               </h2>
-              <h2 className="font-urbanist font-semibold opacity-70">
+              <h2 className="font-garamond font-semibold opacity-70">
                 {item.position}
               </h2>
             </div>

@@ -51,10 +51,10 @@ const Testimonial = () => {
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="flex flex-col items-center justify-center"
       >
-        <h1 className="z-10 text-center font-urbanist text-2xl font-semibold md:text-5xl">
+        <h1 className="z-10 text-center font-garamond text-2xl font-semibold md:text-5xl">
           Testimonials
         </h1>
-        <span className="z-10 text-md mt-2 px-2 font-urbanist md:mt-4 md:px-5 md:text-xl">
+        <span className="z-10 text-md mt-2 px-2 font-garamond md:mt-4 md:px-5 md:text-xl">
           What Our Clients Says About Us
         </span>
       </motion.div>
@@ -76,7 +76,7 @@ const Testimonial = () => {
             <SwiperSlide className="h-full" key={index}>
               <div className="z-10 flex h-full items-center justify-center">
                 <figure className="mx-10 mt-10">
-                  <blockquote className="text-center font-urbanist font-bold leading-8 text-base-content lg:text-3xl">
+                  <blockquote className="text-center font-garamond font-bold leading-8 text-base-content lg:text-3xl">
                     <p>“{item.quote}”</p>
                   </blockquote>
                   <div className="mt-10 flex flex-col items-center">

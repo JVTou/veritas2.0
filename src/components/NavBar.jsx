@@ -38,10 +38,10 @@ const NavBar = () => {
                 />
               </svg>
             </div>
-            <ul className="menu dropdown-content menu-md z-[1] mt-3 w-52 gap-2 rounded-box bg-base-100 p-2 shadow">
+            <ul className="menu dropdown-content menu-md z-[1] mt-3 w-96 gap-2 rounded-box bg-base-100 p-2 shadow">
               {navigation.map((item, index) => (
                 <li key={index}>
-                  <a key={item.name} href={item.href} className="font-urbanist">
+                  <a key={item.name} href={item.href} className="font-garamond">
                     {item.name}
                   </a>
                 </li>
@@ -50,20 +50,20 @@ const NavBar = () => {
           </div>
           <a
             href="/"
-            className="hidden md:flex btn btn-ghost rounded-full font-urbanist text-lg font-semibold"
+            className="hidden md:flex btn btn-ghost rounded-full font-garamond text-lg font-semibold w-auto mr-2"
           >
             <div className="w-12">
               <div className="rounded object-contain">
-                <img src="/images/icons/ap_logo.png" />
+                <img src="/images/icons/veritas_logo.png" />
               </div>
             </div>
-            AP Building Inc.
+            veritas managed solutions, inc.
           </a>
         </div>
         <div className="navbar-center">
           <div className="w-12 md:hidden">
             <div className="rounded object-contain">
-              <img src="/images/icons/ap_logo.png" />
+              <img src="/images/icons/veritas_logo.png" />
             </div>
           </div>
           <div className="ml-10 hidden lg:flex">
@@ -72,7 +72,7 @@ const NavBar = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`btn btn-ghost rounded-full font-urbanist text-sm font-light ${
+                  className={`btn btn-ghost rounded-full font-garamond text-sm font-light ${
                     active === item.name ? "bg-base-300" : ""
                   }`}
                   onClick={() => setActive(item.name)}
