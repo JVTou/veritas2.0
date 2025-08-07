@@ -15,8 +15,8 @@ const NavBar = () => {
 
   return (
     <div className="sticky top-0 z-50 flex justify-center py-4">
-      <div className="navbar max-w-xs rounded-full bg-base-100/90 py-0 shadow-2xl outline outline-base-content/5 backdrop-blur md:max-w-5xl">
-        <div className="navbar-start">
+      <div className="navbar rounded-full bg-base-100/90 py-0 shadow-2xl outline outline-base-content/5 backdrop-blur flex">
+        <div className="navbar-start flex items-center">
           <div className="dropdown">
             <div
               tabIndex={0}
@@ -50,7 +50,7 @@ const NavBar = () => {
           </div>
           <a
             href="/"
-            className="hidden md:flex btn btn-ghost rounded-full font-garamond text-lg font-semibold w-auto mr-2"
+            className="hidden md:flex btn btn-ghost rounded-full font-garamond text-lg font-semibold flex-row items-center"
           >
             <div className="w-12">
               <div className="rounded object-contain">
@@ -72,7 +72,7 @@ const NavBar = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`btn btn-ghost rounded-full font-garamond text-sm font-light ${
+                  className={`btn btn-ghost rounded-full font-garamond text-sm ${
                     active === item.name ? "bg-base-300" : ""
                   }`}
                   onClick={() => setActive(item.name)}

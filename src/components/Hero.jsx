@@ -22,27 +22,27 @@ const Hero = () => {
           loop
           muted
           playsInline
-          className="max-w-xs rounded-b-box rounded-t-[14rem] shadow-2xl outline outline-base-content/5 md:max-w-md"
+          className="max-w-xs rounded-box shadow-2xl outline outline-base-content/5 md:max-w-md"
           src="/images/featured/network.mp4"
         >
           Your browser does not support the video tag.
         </video>
         <div className="text-center lg:text-start flex flex-col justify-center items-center lg:items-start min-w-2/3">
-          <div className="font-garamond text-3xl font-black uppercase md:text-7xl">
+          <div className="font-garamond text-3xl font-black md:text-7xl">
             veritas managed solutions, inc.
             <div className="h-[4.5rem] md:h-[9rem] md:w-[720px]">
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
-                    .typeString(`<span class="text-primary">Painting</span>`)
+                    .typeString(`<span class="text-primary">Low Voltage</span>`)
                     .pauseFor(2500)
                     .deleteAll()
                     .typeString(
-                      `<span class="text-secondary">Building Maintenance</span>`
+                      `<span class="text-secondary">AV Rooms</span>`
                     )
                     .pauseFor(2500)
                     .deleteAll()
-                    .typeString(`<span class="text-accent">Electrical</span>`)
+                    .typeString(`<span class="text-accent">Server Racks</span>`)
                     .pauseFor(2500)
                     .start();
                 }}
@@ -54,7 +54,7 @@ const Hero = () => {
                 }}
               />
             </div>
-            <span className="text-info">Serving Southern California</span>
+            <span className="text-info">est. 2009</span>
           </div>
           <div className="py-6 flex gap-2 max-lg:justify-center">
             <a
