@@ -23,7 +23,7 @@ export default function CCTVPhotoAlbum() {
   return (
     <>
       <h1
-        id="cctv-projects"
+        id="projects"
         className="font-garamond text-center text-2xl font-semibold md:text-5xl py-5"
       >
         CCTV Projects
