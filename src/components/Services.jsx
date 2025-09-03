@@ -80,7 +80,7 @@ const Services = () => {
               <h2 className="font-garamond card-title text-3xl font-black">
                 {item.name}
               </h2>
-              <p className="text-md font-garamond font-medium opacity-60">
+              <p className="text-md font-garamond font-medium leading-relaxed text-gray-700 dark:text-gray-300">
                 {item.description}
               </p>
               <figure>
