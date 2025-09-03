@@ -86,8 +86,8 @@ const Testimonial = () => {
                       alt={item.name}
                     />
                     <div className="mt-4 flex justify-center gap-2 lg:tracking-widest">
-                      <div>{item.name}</div>
-                      <div className="text-base-content/50">
+                      <div className="font-garamond">{item.name}</div>
+                      <div className="text-base-content/50 font-garamond">
                         {item.position}
                       </div>
                     </div>

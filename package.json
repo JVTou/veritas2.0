@@ -4,6 +4,7 @@
 	"type": "module",
 	"dependencies": {
 		"@tsparticles/plugin-polygon-mask": "^3.8.1",
+		"@tsparticles/preset-triangles": "^3.2.0",
 		"@tsparticles/react": "^3.0.0",
 		"@tsparticles/shape-text": "^3.8.1",
 		"@tsparticles/slim": "^3.8.1",

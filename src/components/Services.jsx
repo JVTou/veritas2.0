@@ -4,22 +4,46 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 
 const services = [
   {
-    name: "Building Maintenance",
-    icon: "../../images/featured/maintenance.jpg",
+    name: "Cable Infrastructure",
+    icon: "/images/featured/cableinfrastructure.jpeg",
     description:
-      "AP Building Maintenance will do your minor painting touch up to complete siding replacement and repairs of all types.",
+      "Build or renovate your network with our comprehensive cable infrastructure solutions. From structured cabling to fiber optic installations, we ensure reliable connectivity for your business.",
   },
   {
-    name: "Electrical",
-    icon: "../../images/featured/electrical.jpg",
+    name: "Wireless Services",
+    icon: "/images/featured/wireless.jpeg",
     description:
-      "AP Building will provide you with all of your electrical needs. We have a team of experienced electricians ready to take care of you. We perform electrical upgrades of all types.",
+      "Wireless systems designed by experts. We provide enterprise-grade WiFi solutions, wireless network design, and optimization to keep your business connected seamlessly.",
   },
   {
-    name: "Painting",
-    icon: "../../images/featured/painting.jpg",
+    name: "Audio and Visual",
+    icon: "/images/featured/audiovisual.jpg",
     description:
-      "We perform interior and exterior painting. Full repaints to graffiti removal. We can provide your properties with all of your painting needs.",
+      "Modern conference room and AV solutions prepared to improve your workflow. From video conferencing systems to digital signage, we enhance communication and collaboration.",
+  },
+  {
+    name: "Security Services",
+    icon: "/images/featured/security.jpg",
+    description:
+      "Secure your locations with card access, burglar and alarm systems. Our comprehensive security solutions protect your assets and provide peace of mind.",
+  },
+  {
+    name: "Information Technology",
+    icon: "/images/featured/IT.jpg",
+    description:
+      "Software, troubleshooting and desktop support. Our IT team handles everything from system administration to technical support to keep your technology running smoothly.",
+  },
+  {
+    name: "Managed Services",
+    icon: "/images/featured/managedservices.jpg",
+    description:
+      "Network systems, server management and smart hands. We proactively monitor and maintain your IT infrastructure to prevent issues before they impact your business.",
+  },
+  {
+    name: "Consultation",
+    icon: "/images/featured/consultation.jpg",
+    description:
+      "Consultation, design and project management. Our experts work with you to plan, design, and execute technology solutions that align with your business goals.",
   },
 ];
 const Services = () => {
@@ -40,8 +64,7 @@ const Services = () => {
           Our Services
         </h1>
         <span className="z-10 text-md font-garamond mt-2 px-2 text-center md:mt-4 md:px-5 md:text-xl">
-          Uncover new paths, explore opportunities and chart your success with
-          us.
+          Comprehensive technology solutions to power your business growth and success.
         </span>
       </motion.div>
       <motion.div

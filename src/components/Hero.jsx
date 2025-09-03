@@ -54,7 +54,7 @@ const Hero = () => {
                 }}
               />
             </div>
-            <span className="text-info">est. 2009</span>
+            <span className="text-info font-garamond">est. 2009</span>
           </div>
           <div className="py-6 flex gap-2 max-lg:justify-center">
             <a

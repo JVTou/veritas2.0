@@ -47,7 +47,7 @@ export default function ThemeDropdown() {
 
   return (
     <div className="dropdown w-full">
-      <div tabIndex={0} role="button" className="btn md:text-lg m-1">
+      <div tabIndex={0} role="button" className="btn md:text-lg m-1 font-garamond">
         Choose Theme
         <svg
           width="12px"

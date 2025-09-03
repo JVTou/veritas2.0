@@ -2,51 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 
-const team = [
-  {
-    name: "Jack",
-    profile:
-      "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    position: "President",
-  },
-  {
-    name: "Albert",
-    profile:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=256&h=256&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    position: "Project Manager",
-  },
-  {
-    name: "Albert",
-    profile:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=256&h=256&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    position: "Project Manager",
-  },
-  {
-    name: "Albert",
-    profile:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=256&h=256&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    position: "Project Manager",
-  },
-  {
-    name: "Albert",
-    profile:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=256&h=256&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    position: "Project Manager",
-  },
-  {
-    name: "Albert",
-    profile:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=256&h=256&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    position: "Project Manager",
-  },
-  {
-    name: "Albert",
-    profile:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=256&h=256&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    position: "Project Manager",
-  },
-];
-
 const Team = () => {
   return (
     <motion.div
@@ -55,45 +10,135 @@ const Team = () => {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
       id="team"
-      className="flex flex-col items-center justify-center"
+      className="flex flex-col items-center justify-center font-garamond"
     >
       <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="flex flex-col items-center justify-center"
+        className="flex flex-col items-center justify-center font-garamond"
       >
         <h1 className="z-10 font-garamond text-center text-2xl font-semibold md:text-5xl">
-          Our Team
+          History
         </h1>
-        <span className="z-10 text-md font-garamond mt-4 px-2 text-center md:mt-4 md:px-5 md:text-xl">
-          our team collaborates seamlessly to succeed on your projects.
-        </span>
       </motion.div>
+      
       <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="mt-10 grid gap-8 md:grid-cols-2 xl:grid-cols-3"
+        className="mt-10 sm:mx-16 lg:mx-64"
       >
-        {team.map((item, index) => (
-          <div
-            key={index}
-            className="z-10 card w-80 border border-base-content/10 shadow-sm lg:w-96"
-          >
-            <figure className="lpx-10 pt-10">
-              <img
-                src={item.profile}
-                alt="Shoes"
-                className="h-44 w-44 rounded-full"
-              />
-            </figure>
-            <div className="card-body items-center text-center">
-              <h2 className="font-garamond card-title font-bold">
-                {item.name}
-              </h2>
-              <h2 className="font-garamond font-semibold opacity-70">
-                {item.position}
-              </h2>
+        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical font-garamond">
+          <li>
+            <div className="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
             </div>
-          </div>
-        ))}
+            <div className="timeline-start mb-10 md:text-end font-garamond">
+              <time className="font-mono italic">1980s</time>
+              <div className="text-lg font-black font-garamond">Tom P. Tuttle</div>
+              <strong className="font-garamond">Tom Tuttle</strong> began his career in telecommunications at Pac
+              Bell, gaining significant expertise in the field. His time there laid the
+              foundation for his later ventures and established him as a trusted industry
+              professional.
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div className="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <div className="timeline-end mb-10 font-garamond">
+              <time className="font-mono italic">1990s</time>
+              <div className="text-lg font-black font-garamond">Tim C. Bowdish</div>
+              <strong className="font-garamond">Tim Bowdish</strong> started at T&R Communications in the early
+              1990s, advancing from technician to Project Manager. His experience managing
+              telecom projects sharpened his leadership and technical skills.
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div className="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <div className="timeline-start mb-10 md:text-end font-garamond">
+              <time className="font-mono italic">Early 2000s</time>
+              <div className="text-lg font-black font-garamond">Foundation in telecommunications</div>
+              <ul>
+                <li>
+                  <strong className="font-garamond">Tom Tuttle</strong> founded T&R Communications and later joined
+                  Netversant Solutions, contributing to its growth.
+                </li>
+                <br />
+                <li>
+                  <strong className="font-garamond">Tim Bowdish</strong> also rose through the ranks at Netversant,
+                  becoming Director of Northern California and focusing on project success
+                  and operational excellence.
+                </li>
+              </ul>
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div className="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <div className="timeline-end mb-10 font-garamond">
+              <time className="font-mono italic">2009</time>
+              <div className="text-lg font-black font-garamond">Veritas Managed Solutions, inc.</div>
+              In 2009, <strong className="font-garamond">Tom Tuttle</strong> and <strong className="font-garamond">Tim Bowdish</strong> co-founded
+              Veritas Managed Solutions Inc., combining decades of industry experience.
+              <strong className="font-garamond">Tom Tuttle</strong> managed the financial aspects, while <strong className="font-garamond">
+                Tim Bowdish
+              </strong> focused on operations and growth, creating a company built on trust and
+              integrity.
+            </div>
+            <hr />
+          </li>
+        </ul>
       </motion.div>
     </motion.div>
   );
