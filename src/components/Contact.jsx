@@ -379,9 +379,6 @@ const Contact = () => {
           </div>
         </div>
       </motion.div>
-      <div className="flex items-center justify-center py-10 font-garamond text-sm lg:text-lg">
-        <h1>© Veritas Managed Solutions, Inc. 2009-{new Date().getFullYear()}. All rights reserved.</h1>
-      </div>
     </motion.section>
   );
 };

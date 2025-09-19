@@ -7,11 +7,6 @@ export const getLogos = () => {
       filename: 'cisco.svg'
     },
     {
-      src: '/images/logo/meraki.svg',
-      alt: 'Cisco Meraki',
-      filename: 'meraki.svg'
-    },
-    {
       src: '/images/logo/aruba.svg',
       alt: 'Aruba Networks',
       filename: 'aruba.svg'

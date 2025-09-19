@@ -1,18 +1,14 @@
 import Contact from "./components/Contact";
-import ConsultationPhotoAlbum from "./components/ConsultationPhotoAlbum";
-import CCTVPhotoAlbum from "./components/CCTVPhotoAlbum";
-import DataPhotoAlbum from "./components/DataPhotoAlbum";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import ITPhotoAlbum from "./components/ITPhotoAlbum";
 import LogoClouds from "./components/LogoClouds";
 import LogoParticles from "./components/LogoParticles";
+import Map from "./components/Map";
 import NavBar from "./components/NavBar";
-import SecurityPhotoAlbum from "./components/SecurityPhotoAlbum";
+import PhotoAlbum from "./components/PhotoAlbum";
 import Services from "./components/Services";
 import Team from "./components/Team";
 import Testimonial from "./components/Testimonial";
-import WirelessPhotoAlbum from "./components/WirelessPhotoAlbum";
 
 function App() {
   return (
@@ -23,14 +19,10 @@ function App() {
       <Services />
       <Testimonial />
       <Team />
+      <Map />
       <Contact />
       <LogoParticles />
-      <CCTVPhotoAlbum />
-      <SecurityPhotoAlbum />
-      <WirelessPhotoAlbum />
-      <ITPhotoAlbum />
-      <DataPhotoAlbum />
-      <ConsultationPhotoAlbum />
+      <PhotoAlbum />
       <Footer />
     </div>
   );

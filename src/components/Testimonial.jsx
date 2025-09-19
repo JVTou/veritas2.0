@@ -13,28 +13,44 @@ import {
 } from "swiper/modules";
 const testimonials = [
   {
-    name: "Peter",
-    position: "Reasonable Guy",
+    name: "Sarah Chen",
+    position: "IT Director, TechCorp Solutions",
     quote:
-      "I really like this company. They're the best. The greatest. I would recommend them to anyone.",
+      "Veritas transformed our network infrastructure completely. Their team's expertise in wireless solutions and security systems exceeded our expectations. We've seen a 40% improvement in network reliability since implementation.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "Michael Rodriguez",
+    position: "Operations Manager, Bay Area Manufacturing",
+    quote:
+      "The CCTV and security installation was flawless. Veritas handled everything from planning to implementation, and their 24/7 support has been invaluable. Our facility security has never been better.",
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "Jennifer Walsh",
+    position: "CEO, Silicon Valley Startups",
+    quote:
+      "Working with Veritas has been a game-changer for our growing company. Their managed IT services allowed us to focus on our core business while they handled all our technology needs. Highly professional and reliable.",
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "David Kim",
+    position: "Facilities Director, Regional Healthcare Group",
+    quote:
+      "The audiovisual systems Veritas installed across our medical facilities have been outstanding. Their attention to detail and understanding of healthcare requirements made all the difference. Patient experience has improved significantly.",
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
-    name: "David",
-    position: "Marketing Manager",
+    name: "Lisa Thompson",
+    position: "IT Manager, Financial Services Inc.",
     quote:
-      "Wonderful team, great service and always available to answer any queries. I always recommend them to my friends.",
+      "Veritas's cable infrastructure work was exceptional. They completed our office renovation project on time and under budget. Their team's knowledge of current standards and future-proofing our network was impressive.",
     image:
-      "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Peter",
-    position: "Reasonable Guy",
-    quote:
-      "I really like this company. They're the best. The greatest. I would recommend them to anyone.",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
 ];
 const Testimonial = () => {

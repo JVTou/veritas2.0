@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { fadeIn, staggerContainer } from "../utils/motion";
+import ServicesCard from "./ServicesCard";
 
 const Hero = () => {
   return (
@@ -17,16 +18,7 @@ const Hero = () => {
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="z-10 hero-content flex-col lg:flex-row-reverse items-center lg:items-start"
       >
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="max-w-xs rounded-box shadow-2xl outline outline-base-content/5 md:max-w-md"
-          src="/images/featured/network.mp4"
-        >
-          Your browser does not support the video tag.
-        </video>
+        <ServicesCard />
         <div className="text-center lg:text-start flex flex-col justify-center items-center lg:items-start min-w-2/3">
           <div className="font-garamond text-3xl font-black md:text-7xl">
             veritas managed solutions, inc.
