@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const ServicesCard = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  // Preload the critical linesofbusiness image
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => setImageLoaded(true);
+    img.src = "/images/featured/linesofbusiness.png";
+  }, []);
+
   const businessServices = [
     {
       name: "Security Systems",
@@ -83,11 +92,20 @@ const ServicesCard = () => {
     return (
       <div className="relative inline-block max-w-3xl">
         {renderPins()}
-        <img
-          className="opacity-100 max-w-full rounded-lg z-10"
-          src="/images/featured/linesofbusiness.png"
-          alt="Veritas Business Solutions"
-        />
+        {imageLoaded ? (
+          <img
+            className="opacity-100 max-w-full rounded-lg z-10 transition-opacity duration-300"
+            src="/images/featured/linesofbusiness.png"
+            alt="Veritas Business Solutions"
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync"
+          />
+        ) : (
+          <div className="w-full h-64 bg-base-200 rounded-lg flex items-center justify-center z-10">
+            <div className="loading loading-spinner loading-lg text-primary"></div>
+          </div>
+        )}
       </div>
     );
   };
