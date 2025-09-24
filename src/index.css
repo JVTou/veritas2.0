@@ -17,6 +17,7 @@ html, body {
 /* Ensure root container doesn't overflow */
 #root {
   max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 /* Set default font family to Garamond */
