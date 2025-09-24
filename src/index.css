@@ -6,9 +6,8 @@
 
 /* Prevent horizontal overflow without affecting vertical scroll */
 html, body {
-  max-width: 100vw !important;
+  max-width: 100% !important;
   box-sizing: border-box !important;
-  overflow-x: hidden !important;
 }
 
 * {
@@ -17,8 +16,7 @@ html, body {
 
 /* Ensure root container doesn't overflow */
 #root {
-  max-width: 100vw !important;
-  overflow-x: hidden !important;
+  max-width: 100% !important;
 }
 
 /* Set default font family to Garamond */
