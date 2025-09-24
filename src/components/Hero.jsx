@@ -15,7 +15,7 @@ const Hero = () => {
       className="hero py-10 flex justify-center "
     >
       <motion.div
-        variants={fadeIn("up", "tween", 0.2, 1)}
+        variants={fadeIn("right", "tween", 0.2, 1)}
         className="z-10 hero-content flex-col lg:flex-row-reverse items-center lg:items-start"
       >
         <ServicesCard />

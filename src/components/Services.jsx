@@ -57,7 +57,7 @@ const Services = () => {
       className="mt-10 flex flex-col items-center justify-center md:mt-20"
     >
       <motion.div
-        variants={fadeIn("up", "tween", 0.2, 1)}
+        variants={fadeIn("right", "tween", 0.2, 1)}
         className="flex flex-col items-center justify-center"
       >
         <h1 className="z-10 font-garamond text-center text-2xl font-semibold md:text-5xl">
@@ -68,7 +68,7 @@ const Services = () => {
         </span>
       </motion.div>
       <motion.div
-        variants={fadeIn("up", "tween", 0.2, 1)}
+        variants={fadeIn("right", "tween", 0.2, 1)}
         className="container mt-10 grid gap-10 p-4 md:grid-cols-2 xl:grid-cols-3"
       >
         {services.map((item, index) => (
