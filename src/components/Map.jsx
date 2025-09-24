@@ -144,84 +144,24 @@ const Map = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row relative h-screen z-10">
+    <div className="hidden md:flex flex-col md:flex-row relative h-screen z-10">
       <section className="content flex-[1_1_50%] order-1 md:flex-[1_1_80%] md:p-8 md:relative z-10">
-        <section className="3xl:absolute 3xl:top-0 3xl:left-0 z-[999] rounded-md bg-base-300 p-2 m-2 sm:mx-auto 3xl:mr-0 3xl:ml-1 3xl:w-fit">
-          <div className="inline-flex items-center p-4">
-            <span className="size-6 inline-block bg-accent rounded-full me-2"></span>
-            <span className="text-base-content text-xl">Headquarters</span>
-          </div>
-          <div className="inline-flex items-center p-4">
-            <span className="size-6 inline-block bg-[#ffe989] rounded-full me-2"></span>
-            <span className="text-base-content text-xl">Offices</span>
-          </div>
-          <form className="max-w-sm p-4">
-            <label
-              htmlFor="states"
-              className="block mb-2 text-sm font-medium text-base-content"
-            >
-              Select a state
-            </label>
-            <select
-              id="states"
-              ref={stateDropdownRef}
-              className="text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-300 dark:placeholder-gray-400 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            >
-              <option value="AL">Alabama</option>
-              <option value="AK">Alaska</option>
-              <option value="AZ">Arizona</option>
-              <option value="AR">Arkansas</option>
-              <option value="CA">California</option>
-              <option value="CO">Colorado</option>
-              <option value="CT">Connecticut</option>
-              <option value="DE">Delaware</option>
-              <option value="DC">District Of Columbia</option>
-              <option value="FL">Florida</option>
-              <option value="GA">Georgia</option>
-              <option value="HI">Hawaii</option>
-              <option value="ID">Idaho</option>
-              <option value="IL">Illinois</option>
-              <option value="IN">Indiana</option>
-              <option value="IA">Iowa</option>
-              <option value="KS">Kansas</option>
-              <option value="KY">Kentucky</option>
-              <option value="LA">Louisiana</option>
-              <option value="ME">Maine</option>
-              <option value="MD">Maryland</option>
-              <option value="MA">Massachusetts</option>
-              <option value="MI">Michigan</option>
-              <option value="MN">Minnesota</option>
-              <option value="MS">Mississippi</option>
-              <option value="MO">Missouri</option>
-              <option value="MT">Montana</option>
-              <option value="NE">Nebraska</option>
-              <option value="NV">Nevada</option>
-              <option value="NH">New Hampshire</option>
-              <option value="NJ">New Jersey</option>
-              <option value="NM">New Mexico</option>
-              <option value="NY">New York</option>
-              <option value="NC">North Carolina</option>
-              <option value="ND">North Dakota</option>
-              <option value="OH">Ohio</option>
-              <option value="OK">Oklahoma</option>
-              <option value="OR">Oregon</option>
-              <option value="PA">Pennsylvania</option>
-              <option value="RI">Rhode Island</option>
-              <option value="SC">South Carolina</option>
-              <option value="SD">South Dakota</option>
-              <option value="TN">Tennessee</option>
-              <option value="TX">Texas</option>
-              <option value="UT">Utah</option>
-              <option value="VT">Vermont</option>
-              <option value="VA">Virginia</option>
-              <option value="WA">Washington</option>
-              <option value="WV">West Virginia</option>
-              <option value="WI">Wisconsin</option>
-              <option value="WY">Wyoming</option>
-            </select>
-          </form>
-        </section>
-        <div className="map-wrapper w-full h-fit m-auto z-10">
+      <div className="map-wrapper w-full h-fit m-auto z-10 relative">
+          {/* Compact Legend - Positioned in top-left corner */}
+          <div className="absolute top-0 left-0 z-[999] bg-base-100/90 backdrop-blur-sm rounded-lg shadow-lg p-3 max-w-[200px]">
+            <div className="space-y-2">
+              <div className="flex items-center">
+                <span className="w-4 h-4 bg-accent rounded-full mr-2 flex-shrink-0"></span>
+                <span className="text-base-content text-sm font-medium">Headquarters</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-4 h-4 bg-[#ffe989] rounded-full mr-2 flex-shrink-0"></span>
+                <span className="text-base-content text-sm font-medium">Offices</span>
+              </div>
+            </div>
+
+        </div>
+
           <div
             id="toolTip"
             ref={toolTipRef}

@@ -26,15 +26,25 @@ const Hero = () => {
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
-                    .typeString(`<span class="text-primary">Low Voltage</span>`)
+                    .typeString(`<span class="text-primary">Cabling and Infrastructure</span>`)
                     .pauseFor(2500)
                     .deleteAll()
-                    .typeString(
-                      `<span class="text-secondary">AV Rooms</span>`
-                    )
+                    .typeString(`<span class="text-accent">Wireless Solutions</span>`)
                     .pauseFor(2500)
                     .deleteAll()
-                    .typeString(`<span class="text-accent">Server Racks</span>`)
+                    .typeString(`<span class="text-secondary">Security Systems</span>`)
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .typeString(`<span class="text-info">Audio Visual</span>`)
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .typeString(`<span class="text-success">IT Services</span>`)
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .typeString(`<span class="text-warning">Managed Services</span>`)
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .typeString(`<span class="text-error">Consultation</span>`)
                     .pauseFor(2500)
                     .start();
                 }}

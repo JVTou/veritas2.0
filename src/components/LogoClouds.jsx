@@ -16,7 +16,7 @@ const LogoClouds = () => {
     >
       <motion.div variants={fadeIn("up", "tween", 0.2, 1)}>
         <h2 className="text-base-400 mb-12 text-center font-garamond text-lg font-semibold leading-8">
-          You'll be in good company
+          Trusted Partners & Industry Leaders
         </h2>
         <div className="wrap flex flex-wrap justify-center gap-10 xl:gap-32">
           {logos.map((logo, index) => (
