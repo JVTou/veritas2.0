@@ -8,10 +8,11 @@ import PhotoAlbum from "./components/PhotoAlbum";
 import Services from "./components/Services";
 import About from "./components/About";
 import Testimonial from "./components/Testimonial";
+import LogoParticles from "./components/LogoParticles";
 
 function App() {
   return (
-    <div className="px-1 py-2 md:px-10 font-garamond">
+    <div className="relative px-1 py-2 md:px-10 font-garamond">
       <NavBar />
       <Hero />
       <LogoClouds />
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Map />
       <Contact />
+      <LogoParticles />
       <PhotoAlbum />
       <Footer />
     </div>
